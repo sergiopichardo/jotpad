@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.carousel {
+  overflow: hidden;
+  /* border: 2px solid black; */
+  cursor: grab;
+  /* background: lightyellow; */
+}
+
+.inner-carousel {
+  display: flex;
+  text-align: center;
+  /* background: lightblue; */
+}
+
+.item {
+  margin-right: 10px;
+  min-height: 2rem;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  pointer-events: none;
+}

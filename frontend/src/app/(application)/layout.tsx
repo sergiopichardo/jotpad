@@ -8,9 +8,11 @@ type AppLayoutProps = {
 
 function AppLayout({ children }: AppLayoutProps) {
     return (
-        <div className="bg-white h-screen relative border-2">
+        <div className="h-screen border-2 z-0">
+            <div className="relative z-10">
+                <MobileNavigation />
+            </div>
             <Sidebar />
-            <MobileNavigation />
             <MobileDrawer />
             {children}
         </div>
